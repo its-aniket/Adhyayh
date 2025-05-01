@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="300" height="150" viewBox="0 0 300 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Infinity symbol with arrows -->
+  <path d="M149.5 80 L177 65 C195 56 210 60 218 72 C226 84 224 100 206 109 L149.5 140 L93 109 C75 100 73 84 81 72 C89 60 104 56 122 65 L149.5 80 Z" fill="none" stroke="#333" stroke-width="8"/>
+  
+  <!-- Arrow left -->
+  <path d="M120 80 L93 80 L106 65 M106 95 L93 80" fill="#000" stroke="#000" stroke-width="2"/>
+  
+  <!-- Arrow right -->
+  <path d="M180 80 L207 80 L194 65 M194 95 L207 80" fill="#000" stroke="#000" stroke-width="2"/>
+  
+  <!-- Text "adhyayh" -->
+  <text x="150" y="130" font-family="serif" font-size="32" text-anchor="middle" fill="#333">adhyayh</text>
+</svg>

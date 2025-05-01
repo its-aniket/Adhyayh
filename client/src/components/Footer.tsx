@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { MapPin, Mail, Phone } from "lucide-react";
 import { SERVICES_LIST, COMPANY_LINKS, SOCIAL_LINKS } from "@/lib/constants";
+import adhyayhLogo from "@/assets/adhyayh-logo.svg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-neutral-900 text-white pt-16 pb-8">
+    <footer className="bg-black text-white pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <motion.div
@@ -15,7 +16,7 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
           >
             <a href="#" className="inline-block mb-6">
-              <span className="text-white font-poppins font-bold text-2xl">Adhyayh</span>
+              <img src={adhyayhLogo} alt="Adhyayh Logo" className="h-12 w-auto filter invert" />
             </a>
             <p className="text-neutral-400 mb-6">
               Simplifying business growth through strategic services and educational content since 2025.
