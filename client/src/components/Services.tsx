@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { Link } from "wouter";
 import useAnimateOnScroll from "@/hooks/useAnimateOnScroll";
 import { SERVICES } from "@/lib/constants";
 
@@ -89,10 +90,10 @@ const ServiceCard = ({ service, index }: { service: any, index: number }) => {
       </div>
       <h3 className="font-bold text-xl text-neutral-900 mb-4 group-hover:text-primary transition-colors duration-300">{service.title}</h3>
       <p className="text-neutral-700 mb-6">{service.description}</p>
-      <a href="#" className={`inline-flex items-center ${service.textColor} font-medium group`}>
+      <Link href={`/services/${service.slug}`} className={`inline-flex items-center ${service.textColor} font-medium group cursor-pointer`}>
         <span>Learn more</span>
         <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-      </a>
+      </Link>
     </motion.div>
   );
 };
