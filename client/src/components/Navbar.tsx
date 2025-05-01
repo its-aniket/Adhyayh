@@ -98,10 +98,10 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <Button
-            variant="ghost"
+            variant="outline"
             size="icon"
             onClick={toggleMenu}
-            className="md:hidden text-neutral-700"
+            className="md:hidden text-neutral-700 bg-white border border-gray-200"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}

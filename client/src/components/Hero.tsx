@@ -57,7 +57,7 @@ const Hero = () => {
             variants={containerVariants}
           >
             <motion.span 
-              className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium inline-block"
+              className="bg-neutral-900 text-white px-4 py-2 rounded-full text-sm font-medium inline-block"
               variants={itemVariants}
             >
               New in 2025
