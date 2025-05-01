@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import adhyayhLogo from "../assets/adhyayh-logo.svg";
+import Logo from "./Logo";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,7 +47,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <a href="#" className="flex items-center space-x-2">
-            <img src={adhyayhLogo} alt="Adhyayh Logo" className="h-16" />
+            <Logo width={180} height={60} color="#000000" />
           </a>
 
           {/* Desktop Navigation */}
