@@ -56,7 +56,7 @@ export const SERVICES = [
   {
     title: "Corporate Training",
     description: "Educational workshops and training sessions designed to enhance team skills and operational efficiency.",
-    icon: React.createElement(Presentation, { className: "text-amber-600 text-2xl" }),
+    icon: React.createElement(Presentation, { className: "text-amber-600 text-3xl" }),
     bgColor: "bg-amber-100",
     textColor: "text-amber-600"
   }
