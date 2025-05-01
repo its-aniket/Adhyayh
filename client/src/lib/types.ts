@@ -37,3 +37,28 @@ export interface ContactFormData {
   service: string;
   message: string;
 }
+
+export interface InternshipRole {
+  id: string;
+  title: string;
+  department: string;
+  description: string;
+  responsibilities: string[];
+  requirements: string[];
+  location: string;
+  type: string; // "Remote" | "Hybrid" | "In-office"
+}
+
+export interface InternApplicationFormData {
+  fullName: string;
+  email: string;
+  phone: string;
+  education: string;
+  university: string;
+  role: string;
+  experience: string;
+  resumeLink?: string;
+  portfolio?: string;
+  coverLetter: string;
+  heardFrom?: string;
+}

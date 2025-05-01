@@ -167,7 +167,120 @@ export const SERVICES_LIST = [
 export const COMPANY_LINKS = [
   { label: "About Us", url: "#about" },
   { label: "Our Team", url: "#team" },
-  { label: "Careers", url: "#" },
+  { label: "Careers", url: "/careers" },
   { label: "Blog", url: "#" },
   { label: "Contact", url: "#contact" }
+];
+
+export const INTERNSHIP_ROLES = [
+  {
+    id: "marketing-intern",
+    title: "Marketing Intern",
+    department: "Marketing",
+    description: "Join our marketing team to help create compelling campaigns for our clients and learn the ropes of digital marketing in a fast-paced environment.",
+    responsibilities: [
+      "Assist in developing marketing strategies and campaigns",
+      "Create content for social media platforms",
+      "Analyze marketing data and prepare reports",
+      "Support the team in client presentations and meetings",
+      "Research market trends and competitor activities"
+    ],
+    requirements: [
+      "Currently pursuing a degree in Marketing, Communications, or related field",
+      "Strong written and verbal communication skills",
+      "Basic knowledge of digital marketing principles",
+      "Familiarity with social media platforms",
+      "Creative mindset and attention to detail"
+    ],
+    location: "Pune, India",
+    type: "Hybrid"
+  },
+  {
+    id: "web-development-intern",
+    title: "Web Development Intern",
+    department: "Technology",
+    description: "Gain hands-on experience in web development while working on real projects for our clients. Learn from our experienced developers and contribute to impactful digital solutions.",
+    responsibilities: [
+      "Assist in developing and maintaining websites and web applications",
+      "Write clean, efficient, and well-documented code",
+      "Test and debug websites across various browsers and devices",
+      "Collaborate with designers to implement visual elements",
+      "Stay updated with emerging web technologies and trends"
+    ],
+    requirements: [
+      "Currently pursuing a degree in Computer Science, IT, or related field",
+      "Knowledge of HTML, CSS, and JavaScript",
+      "Familiarity with responsive design principles",
+      "Basic understanding of web frameworks (React, Angular, or Vue)",
+      "Problem-solving skills and attention to detail"
+    ],
+    location: "Pune, India",
+    type: "Hybrid"
+  },
+  {
+    id: "content-writing-intern",
+    title: "Content Writing Intern",
+    department: "Content",
+    description: "Develop your writing skills while creating engaging content for various platforms. Learn how to craft compelling stories and messaging that resonates with different audiences.",
+    responsibilities: [
+      "Create high-quality content for websites, blogs, and social media",
+      "Research industry topics and trends",
+      "Edit and proofread content for accuracy and clarity",
+      "Assist in developing content strategies",
+      "Collaborate with marketing and design teams"
+    ],
+    requirements: [
+      "Currently pursuing a degree in English, Journalism, Communications, or related field",
+      "Excellent writing and grammar skills",
+      "Strong research abilities",
+      "Ability to adapt writing style for different platforms and audiences",
+      "Creative thinking and attention to detail"
+    ],
+    location: "Remote",
+    type: "Remote"
+  },
+  {
+    id: "graphic-design-intern",
+    title: "Graphic Design Intern",
+    department: "Design",
+    description: "Express your creativity while designing captivating visual content for our clients. Learn industry-standard tools and techniques while building your professional portfolio.",
+    responsibilities: [
+      "Create visual content for digital and print media",
+      "Assist in developing brand identities and style guides",
+      "Design social media graphics, banners, and other marketing materials",
+      "Collaborate with marketing and content teams",
+      "Stay updated with design trends and best practices"
+    ],
+    requirements: [
+      "Currently pursuing a degree in Graphic Design, Visual Arts, or related field",
+      "Proficiency in Adobe Creative Suite (Photoshop, Illustrator, InDesign)",
+      "Strong visual design skills and aesthetic sense",
+      "Basic understanding of design principles",
+      "Portfolio demonstrating creative abilities"
+    ],
+    location: "Pune, India",
+    type: "Hybrid"
+  },
+  {
+    id: "business-development-intern",
+    title: "Business Development Intern",
+    department: "Business",
+    description: "Learn the art of business development and client relationships. Get exposure to sales strategies, client acquisition, and relationship management in a supportive environment.",
+    responsibilities: [
+      "Assist in identifying and researching potential clients",
+      "Support the team in preparing proposals and presentations",
+      "Help maintain client relationship management systems",
+      "Contribute to market research and competitor analysis",
+      "Participate in client meetings and follow-ups"
+    ],
+    requirements: [
+      "Currently pursuing a degree in Business, Marketing, or related field",
+      "Strong communication and interpersonal skills",
+      "Basic understanding of sales and business development principles",
+      "Proficiency in MS Office suite",
+      "Proactive and detail-oriented mindset"
+    ],
+    location: "Pune, India",
+    type: "In-office"
+  }
 ];

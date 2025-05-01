@@ -1,6 +1,7 @@
 import { Route, Switch } from "wouter";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
+import Careers from "@/pages/Careers";
 import MarketingService from "@/pages/services/MarketingService";
 import WebsiteService from "@/pages/services/WebsiteService";
 import LegalService from "@/pages/services/LegalService";
@@ -12,6 +13,7 @@ function App() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/careers" component={Careers} />
       <Route path="/services/marketing" component={MarketingService} />
       <Route path="/services/website" component={WebsiteService} />
       <Route path="/services/legal" component={LegalService} />

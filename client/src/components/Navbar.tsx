@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
+import { Link, useLocation } from "wouter";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
