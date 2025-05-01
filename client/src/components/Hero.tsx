@@ -93,7 +93,7 @@ const Hero = () => {
                   document.getElementById("services")?.scrollIntoView({ behavior: "smooth" });
                 }}
                 variant="outline"
-                className="bg-white hover:bg-neutral-50 text-neutral-800 font-medium px-8 py-6 h-auto rounded-lg border border-neutral-200 inline-flex items-center justify-center transition-colors duration-300"
+                className="bg-white hover:bg-neutral-50 hover:text-black text-neutral-800 font-medium px-8 py-6 h-auto rounded-lg border border-neutral-200 inline-flex items-center justify-center transition-colors duration-300"
               >
                 <span>Our Services</span>
                 <ChevronDown className="ml-2 h-4 w-4" />
