@@ -1,4 +1,12 @@
-import { users, type User, type InsertUser, type ContactRequest, type InsertContactRequest } from "@shared/schema";
+import { 
+  users, 
+  type User, 
+  type InsertUser, 
+  type ContactRequest, 
+  type InsertContactRequest,
+  type InternApplication,
+  type InsertInternApplication
+} from "@shared/schema";
 
 // modify the interface with any CRUD methods
 // you might need
@@ -8,19 +16,24 @@ export interface IStorage {
   getUserByUsername(username: string): Promise<User | undefined>;
   createUser(user: InsertUser): Promise<User>;
   createContactRequest(request: InsertContactRequest): Promise<ContactRequest>;
+  createInternApplication(application: InsertInternApplication): Promise<InternApplication>;
 }
 
 export class MemStorage implements IStorage {
   private users: Map<number, User>;
   private contactRequests: Map<number, ContactRequest>;
+  private internApplications: Map<number, InternApplication>;
   currentId: number;
   currentContactId: number;
+  currentInternApplicationId: number;
 
   constructor() {
     this.users = new Map();
     this.contactRequests = new Map();
+    this.internApplications = new Map();
     this.currentId = 1;
     this.currentContactId = 1;
+    this.currentInternApplicationId = 1;
   }
 
   async getUser(id: number): Promise<User | undefined> {
@@ -55,6 +68,27 @@ export class MemStorage implements IStorage {
     };
     this.contactRequests.set(id, contactRequest);
     return contactRequest;
+  }
+  
+  async createInternApplication(application: InsertInternApplication): Promise<InternApplication> {
+    const id = this.currentInternApplicationId++;
+    const internApplication: InternApplication = {
+      id,
+      fullName: application.fullName,
+      email: application.email,
+      phone: application.phone,
+      education: application.education,
+      university: application.university,
+      role: application.role,
+      experience: application.experience,
+      resumeLink: application.resumeLink || null,
+      portfolio: application.portfolio || null,
+      coverLetter: application.coverLetter,
+      heardFrom: application.heardFrom || null,
+      createdAt: new Date()
+    };
+    this.internApplications.set(id, internApplication);
+    return internApplication;
   }
 }
 
