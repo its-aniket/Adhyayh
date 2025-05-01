@@ -21,44 +21,44 @@ export const SERVICES = [
   {
     title: "Marketing & Branding",
     description: "Strategic digital campaigns, brand positioning, and social media growth strategies for market expansion.",
-    icon: React.createElement(BadgePercent, { className: "text-white text-2xl" }),
-    bgColor: "bg-primary",
-    textColor: "text-primary"
+    icon: React.createElement(BadgePercent, { className: "text-blue-600 text-3xl" }),
+    bgColor: "bg-blue-100",
+    textColor: "text-blue-600"
   },
   {
     title: "Website Development",
     description: "Custom websites, web applications, and e-commerce platforms with responsive design and modern functionality.",
-    icon: React.createElement(Globe, { className: "text-white text-2xl" }),
-    bgColor: "bg-primary",
-    textColor: "text-primary"
+    icon: React.createElement(Globe, { className: "text-purple-600 text-3xl" }),
+    bgColor: "bg-purple-100",
+    textColor: "text-purple-600"
   },
   {
     title: "Legal & Financial Services",
     description: "Business registration, IP protection, and financial consulting to establish a solid operational foundation.",
-    icon: React.createElement(FileText, { className: "text-white text-2xl" }),
-    bgColor: "bg-primary",
-    textColor: "text-primary"
+    icon: React.createElement(FileText, { className: "text-emerald-600 text-3xl" }),
+    bgColor: "bg-emerald-100",
+    textColor: "text-emerald-600"
   },
   {
     title: "AI Automation",
     description: "Implementing AI solutions for workflow automation, customer service, and data-driven decision-making.",
-    icon: React.createElement(Bot, { className: "text-white text-2xl" }),
-    bgColor: "bg-primary",
-    textColor: "text-primary"
+    icon: React.createElement(Bot, { className: "text-indigo-600 text-3xl" }),
+    bgColor: "bg-indigo-100",
+    textColor: "text-indigo-600"
   },
   {
     title: "Business Strategy",
     description: "Comprehensive business plans, market analysis, and competitive positioning for sustainable growth.",
-    icon: React.createElement(GanttChartSquare, { className: "text-white text-2xl" }),
-    bgColor: "bg-primary",
-    textColor: "text-primary"
+    icon: React.createElement(GanttChartSquare, { className: "text-cyan-600 text-3xl" }),
+    bgColor: "bg-cyan-100",
+    textColor: "text-cyan-600"
   },
   {
     title: "Corporate Training",
     description: "Educational workshops and training sessions designed to enhance team skills and operational efficiency.",
-    icon: React.createElement(Presentation, { className: "text-white text-2xl" }),
-    bgColor: "bg-primary",
-    textColor: "text-primary"
+    icon: React.createElement(Presentation, { className: "text-amber-600 text-2xl" }),
+    bgColor: "bg-amber-100",
+    textColor: "text-amber-600"
   }
 ];
 

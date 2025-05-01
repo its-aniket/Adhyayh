@@ -81,10 +81,10 @@ const ServiceCard = ({ service, index }: { service: any, index: number }) => {
         stiffness: 100,
         damping: 12
       }}
-      whileHover={{ y: -10 }}
-      className="service-card bg-white rounded-xl p-8 shadow-lg border border-gray-100 transition-all duration-300"
+      whileHover={{ y: -10, boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)' }}
+      className="service-card bg-white rounded-xl p-8 shadow-md border border-gray-100 transition-all duration-300 hover:border-gray-200 group"
     >
-      <div className={`w-14 h-14 ${service.bgColor} flex items-center justify-center rounded-lg mb-6`}>
+      <div className={`w-16 h-16 ${service.bgColor} flex items-center justify-center rounded-xl mb-6 shadow-sm transform transition-transform duration-300 group-hover:scale-110`}>
         {service.icon}
       </div>
       <h3 className="font-semibold text-xl text-neutral-900 mb-4">{service.title}</h3>
