@@ -46,7 +46,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <a href="#" className="flex items-center space-x-2">
-            <img src="/assets/adhyayh-logo.png" alt="Adhyayh Logo" className="h-10" />
+            <img src="/assets/adhyayh-logo.png" alt="Adhyayh Logo" className="h-12" />
           </a>
 
           {/* Desktop Navigation */}
@@ -68,12 +68,6 @@ const Navbar = () => {
               className="font-medium text-neutral-700 hover:text-primary transition-colors cursor-pointer"
             >
               About
-            </a>
-            <a 
-              onClick={() => handleNavigation("testimonials")}
-              className="font-medium text-neutral-700 hover:text-primary transition-colors cursor-pointer"
-            >
-              Testimonials
             </a>
             <a 
               onClick={() => handleNavigation("team")}

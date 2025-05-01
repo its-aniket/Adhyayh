@@ -15,7 +15,7 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
           >
             <a href="#" className="inline-block mb-6">
-              <span className="text-white font-poppins font-bold text-2xl">Adhyayh</span>
+              <img src="/assets/adhyayh-logo.png" alt="Adhyayh Logo" className="h-12 invert" />
             </a>
             <p className="text-neutral-400 mb-6">
               Simplifying business growth through strategic services and educational content since 2025.
