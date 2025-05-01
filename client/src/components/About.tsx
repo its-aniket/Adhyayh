@@ -46,7 +46,7 @@ const About = () => {
               animate={imageInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              <p className="text-3xl font-poppins font-bold text-primary">2025</p>
+              <p className="text-3xl font-poppins font-bold text-neutral-900">2025</p>
               <p className="text-neutral-600 text-sm">Founded in Pune</p>
             </motion.div>
           </motion.div>
