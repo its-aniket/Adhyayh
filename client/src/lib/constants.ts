@@ -1,8 +1,8 @@
 import React from "react";
 import { 
   ArrowRight, 
-  MessageSquare, 
-  Laptop, 
+  BadgePercent,
+  Globe,
   BarChart2, 
   Bot, 
   Lightbulb as LightbulbIcon, 
@@ -10,51 +10,55 @@ import {
   Instagram as InstagramIcon, 
   Linkedin as LinkedinIcon, 
   Twitter as TwitterIcon, 
-  Facebook as FacebookIcon 
+  Facebook as FacebookIcon,
+  Briefcase,
+  Presentation,
+  FileText,
+  GanttChartSquare
 } from "lucide-react";
 
 export const SERVICES = [
   {
     title: "Marketing & Branding",
-    description: "Digital campaigns, brand strategy, and social media growth, with effective ground-level marketing approaches.",
-    icon: React.createElement(MessageSquare, { className: "text-primary text-2xl" }),
-    bgColor: "bg-primary bg-opacity-10",
+    description: "Strategic digital campaigns, brand positioning, and social media growth strategies for market expansion.",
+    icon: React.createElement(BadgePercent, { className: "text-white text-2xl" }),
+    bgColor: "bg-primary",
     textColor: "text-primary"
   },
   {
     title: "Website Development",
-    description: "Modern, responsive, and scalable websites and e-commerce platforms tailored to your business needs.",
-    icon: React.createElement(Laptop, { className: "text-accent text-2xl" }),
-    bgColor: "bg-accent bg-opacity-10",
-    textColor: "text-accent"
+    description: "Custom websites, web applications, and e-commerce platforms with responsive design and modern functionality.",
+    icon: React.createElement(Globe, { className: "text-white text-2xl" }),
+    bgColor: "bg-primary",
+    textColor: "text-primary"
   },
   {
     title: "Legal & Financial Services",
-    description: "Business registration, IP protection, and trademark registration to secure your business future.",
-    icon: React.createElement(BarChart2, { className: "text-secondary text-2xl" }),
-    bgColor: "bg-secondary bg-opacity-10",
-    textColor: "text-secondary"
+    description: "Business registration, IP protection, and financial consulting to establish a solid operational foundation.",
+    icon: React.createElement(FileText, { className: "text-white text-2xl" }),
+    bgColor: "bg-primary",
+    textColor: "text-primary"
   },
   {
     title: "AI Automation",
-    description: "Smart tools for workflow automation, customer interaction, and data-driven decision-making consultancy.",
-    icon: React.createElement(Bot, { className: "text-purple-600 text-2xl" }),
-    bgColor: "bg-purple-100",
-    textColor: "text-purple-600"
+    description: "Implementing AI solutions for workflow automation, customer service, and data-driven decision-making.",
+    icon: React.createElement(Bot, { className: "text-white text-2xl" }),
+    bgColor: "bg-primary",
+    textColor: "text-primary"
   },
   {
-    title: "Company Branding",
-    description: "Comprehensive branding solutions including logo design, brand guidelines, and identity development.",
-    icon: React.createElement(LightbulbIcon, { className: "text-green-600 text-2xl" }),
-    bgColor: "bg-green-100",
-    textColor: "text-green-600"
+    title: "Business Strategy",
+    description: "Comprehensive business plans, market analysis, and competitive positioning for sustainable growth.",
+    icon: React.createElement(GanttChartSquare, { className: "text-white text-2xl" }),
+    bgColor: "bg-primary",
+    textColor: "text-primary"
   },
   {
-    title: "Educational Content",
-    description: "Educating audiences on how industries really work behind the scenes through valuable content.",
-    icon: React.createElement(BookOpenIcon, { className: "text-yellow-600 text-2xl" }),
-    bgColor: "bg-yellow-100",
-    textColor: "text-yellow-600"
+    title: "Corporate Training",
+    description: "Educational workshops and training sessions designed to enhance team skills and operational efficiency.",
+    icon: React.createElement(Presentation, { className: "text-white text-2xl" }),
+    bgColor: "bg-primary",
+    textColor: "text-primary"
   }
 ];
 
@@ -137,16 +141,17 @@ export const SERVICES_OPTIONS = [
   { value: "website", label: "Website Development" },
   { value: "legal", label: "Legal & Financial Services" },
   { value: "ai", label: "AI Automation" },
-  { value: "branding", label: "Company Branding" },
-  { value: "education", label: "Educational Content" }
+  { value: "strategy", label: "Business Strategy" },
+  { value: "training", label: "Corporate Training" }
 ];
 
 export const SERVICES_LIST = [
   "Marketing & Branding",
   "Website Development",
-  "Legal & Financial",
+  "Legal & Financial Services",
   "AI Automation",
-  "Company Branding"
+  "Business Strategy",
+  "Corporate Training"
 ];
 
 export const COMPANY_LINKS = [

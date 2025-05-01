@@ -27,7 +27,7 @@ const Services = () => {
   };
 
   return (
-    <section id="services" className="py-20 md:py-28 bg-white">
+    <section id="services" className="py-20 md:py-28 bg-gray-50">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <motion.div 
           className="text-center mb-16"
@@ -37,22 +37,22 @@ const Services = () => {
           variants={containerVariants}
         >
           <motion.span 
-            className="bg-secondary bg-opacity-10 text-secondary px-4 py-2 rounded-full text-sm font-medium inline-block"
+            className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium inline-block"
             variants={headerVariants}
           >
-            Our Expertise
+            Our Services
           </motion.span>
           <motion.h2 
-            className="font-poppins font-bold text-3xl md:text-4xl mt-6 text-neutral-900"
+            className="font-bold text-3xl md:text-4xl mt-6 text-neutral-900"
             variants={headerVariants}
           >
-            Comprehensive Services for Your Business Needs
+            Professional Solutions for Business Growth
           </motion.h2>
           <motion.p 
-            className="text-lg text-neutral-600 mt-4 max-w-2xl mx-auto"
+            className="text-lg text-neutral-700 mt-4 max-w-2xl mx-auto"
             variants={headerVariants}
           >
-            We provide customized solutions to help your business grow and succeed in the digital landscape.
+            Offering strategic solutions that align with your business goals and drive measurable results.
           </motion.p>
         </motion.div>
 
@@ -66,7 +66,7 @@ const Services = () => {
   );
 };
 
-const ServiceCard = ({ service, index }) => {
+const ServiceCard = ({ service, index }: { service: any, index: number }) => {
   const { ref, inView } = useAnimateOnScroll();
 
   return (
@@ -82,13 +82,13 @@ const ServiceCard = ({ service, index }) => {
         damping: 12
       }}
       whileHover={{ y: -10 }}
-      className="service-card bg-white rounded-xl p-8 shadow-lg border border-neutral-100 transition-all duration-300"
+      className="service-card bg-white rounded-xl p-8 shadow-lg border border-gray-100 transition-all duration-300"
     >
       <div className={`w-14 h-14 ${service.bgColor} flex items-center justify-center rounded-lg mb-6`}>
         {service.icon}
       </div>
-      <h3 className="font-poppins font-semibold text-xl text-neutral-900 mb-4">{service.title}</h3>
-      <p className="text-neutral-600 mb-6">{service.description}</p>
+      <h3 className="font-semibold text-xl text-neutral-900 mb-4">{service.title}</h3>
+      <p className="text-neutral-700 mb-6">{service.description}</p>
       <a href="#" className={`inline-flex items-center ${service.textColor} font-medium group`}>
         <span>Learn more</span>
         <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
