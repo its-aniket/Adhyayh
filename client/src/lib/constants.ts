@@ -120,19 +120,23 @@ export const TEAM_MEMBERS = [
 export const SOCIAL_LINKS = [
   {
     url: "https://instagram.com/adhyayh",
-    icon: React.createElement(InstagramIcon, { className: "h-5 w-5" })
+    icon: React.createElement(InstagramIcon, { className: "h-5 w-5" }),
+    name: "Instagram"
   },
   {
-    url: "https://linkedin.com/adhyayh",
-    icon: React.createElement(LinkedinIcon, { className: "h-5 w-5" })
+    url: "https://linkedin.com/company/adhyayh",
+    icon: React.createElement(LinkedinIcon, { className: "h-5 w-5" }),
+    name: "LinkedIn"
   },
   {
     url: "https://twitter.com/adhyayh",
-    icon: React.createElement(TwitterIcon, { className: "h-5 w-5" })
+    icon: React.createElement(TwitterIcon, { className: "h-5 w-5" }),
+    name: "Twitter"
   },
   {
     url: "https://facebook.com/adhyayh",
-    icon: React.createElement(FacebookIcon, { className: "h-5 w-5" })
+    icon: React.createElement(FacebookIcon, { className: "h-5 w-5" }),
+    name: "Facebook"
   }
 ];
 

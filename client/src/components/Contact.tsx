@@ -117,7 +117,7 @@ const Contact = () => {
             variants={containerVariants}
           >
             <motion.span 
-              className="bg-secondary bg-opacity-10 text-secondary px-4 py-2 rounded-full text-sm font-medium inline-block"
+              className="bg-secondary text-white bg-opacity-10 text-secondary px-4 py-2 rounded-full text-sm font-medium inline-block"
               variants={itemVariants}
             >
               Get in Touch
@@ -144,7 +144,7 @@ const Contact = () => {
                 variants={itemVariants}
               >
                 <div className="flex-shrink-0 w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center">
-                  <MapPin className="text-primary h-5 w-5" />
+                  <MapPin className="text-primary h-5 w-5 text-white" />
                 </div>
                 <div className="ml-4">
                   <h4 className="text-lg font-semibold text-neutral-900">Our Location</h4>
@@ -157,7 +157,7 @@ const Contact = () => {
                 variants={itemVariants}
               >
                 <div className="flex-shrink-0 w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center">
-                  <Mail className="text-primary h-5 w-5" />
+                  <Mail className="text-primary h-5 w-5 text-white" />
                 </div>
                 <div className="ml-4">
                   <h4 className="text-lg font-semibold text-neutral-900">Email Us</h4>
@@ -170,7 +170,7 @@ const Contact = () => {
                 variants={itemVariants}
               >
                 <div className="flex-shrink-0 w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center">
-                  <Phone className="text-primary h-5 w-5" />
+                  <Phone className="text-primary h-5 w-5 text-white" />
                 </div>
                 <div className="ml-4">
                   <h4 className="text-lg font-semibold text-neutral-900">Call Us</h4>
@@ -183,17 +183,20 @@ const Contact = () => {
               className="mt-10"
               variants={itemVariants}
             >
-              <h4 className="text-lg font-semibold text-neutral-900 mb-4">Follow Us</h4>
-              <div className="flex space-x-4">
+              <h4 className="text-lg font-semibold text-neutral-900 mb-4">Connect With Us</h4>
+              <div className="grid grid-cols-2 gap-3">
                 {SOCIAL_LINKS.map((social, index) => (
                   <motion.a 
                     key={index}
-                    href={social.url} 
-                    className="w-12 h-12 bg-neutral-100 hover:bg-primary hover:text-white text-neutral-600 rounded-full flex items-center justify-center transition-colors"
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-neutral-50 hover:bg-primary hover:text-white text-neutral-700 rounded-lg flex items-center p-3 transition-all border border-neutral-200 hover:border-primary"
+                    whileHover={{ scale: 1.03, y: -2 }}
+                    whileTap={{ scale: 0.97 }}
                   >
-                    {social.icon}
+                    <span className="mr-2">{social.icon}</span>
+                    <span className="font-medium">{social.name}</span>
                   </motion.a>
                 ))}
               </div>
@@ -217,7 +220,7 @@ const Contact = () => {
                         <FormLabel className="text-sm font-medium text-neutral-700">First Name</FormLabel>
                         <FormControl>
                           <Input 
-                            placeholder="John" 
+                            placeholder="Rushi" 
                             className="w-full px-4 py-3 h-auto border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                             {...field} 
                           />
@@ -235,7 +238,7 @@ const Contact = () => {
                         <FormLabel className="text-sm font-medium text-neutral-700">Last Name</FormLabel>
                         <FormControl>
                           <Input 
-                            placeholder="Doe" 
+                            placeholder="Gulum" 
                             className="w-full px-4 py-3 h-auto border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                             {...field} 
                           />
@@ -254,7 +257,7 @@ const Contact = () => {
                       <FormLabel className="text-sm font-medium text-neutral-700">Email Address</FormLabel>
                       <FormControl>
                         <Input 
-                          placeholder="john@example.com" 
+                          placeholder="Rushi@example.com" 
                           className="w-full px-4 py-3 h-auto border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                           {...field} 
                         />
@@ -272,7 +275,7 @@ const Contact = () => {
                       <FormLabel className="text-sm font-medium text-neutral-700">Company Name</FormLabel>
                       <FormControl>
                         <Input 
-                          placeholder="Your Company" 
+                          placeholder="Adhyayh" 
                           className="w-full px-4 py-3 h-auto border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                           {...field} 
                         />

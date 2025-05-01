@@ -37,7 +37,7 @@ const Team = () => {
           variants={containerVariants}
         >
           <motion.span 
-            className="bg-primary bg-opacity-10 text-primary px-4 py-2 rounded-full text-sm font-medium inline-block"
+            className="bg-primary text-white bg-opacity-10 text-primary px-4 py-2 rounded-full text-sm font-medium inline-block"
             variants={itemVariants}
           >
             Our Team
