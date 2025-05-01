@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
 import { Link, useLocation } from "wouter";
+import { navigate } from "wouter/use-browser-location";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,15 +28,24 @@ const Navbar = () => {
 
   // Handle navigation and close mobile menu
   const handleNavigation = (id: string) => {
-    if (isMenuOpen) {
-      setIsMenuOpen(false);
-    }
-    
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (isMenuOpen) setIsMenuOpen(false);
+  
+    if (window.location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 100); // wait for navigation
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     }
   };
+  
 
   return (
     <header
@@ -48,13 +58,13 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <a href="#" className="flex items-center space-x-2">
-            <Logo width={180} height={60} color="#000000" />
+            <img src="\src\assets\logofoot.png" alt="" height={50} width={80} />
           </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             <a 
-              onClick={() => handleNavigation("home")}
+              href="/"
               className="font-medium text-neutral-700 hover:text-primary transition-colors cursor-pointer"
             >
               Home
@@ -77,6 +87,12 @@ const Navbar = () => {
             >
               Team
             </a>
+            <Link
+              href="/careers" 
+              className="font-medium text-neutral-700 hover:text-primary transition-colors cursor-pointer"
+            >
+              Careers
+            </Link>
             <a 
               onClick={() => handleNavigation("contact")}
               className="font-medium text-neutral-700 hover:text-primary transition-colors cursor-pointer"
