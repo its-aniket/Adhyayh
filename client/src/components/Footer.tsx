@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { MapPin, Mail, Phone } from "lucide-react";
 import { SERVICES_LIST, COMPANY_LINKS, SOCIAL_LINKS } from "@/lib/constants";
+import adhyayhLogo from "../assets/adhyayh-logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,7 +16,7 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
           >
             <a href="#" className="inline-block mb-6">
-              <img src="/assets/adhyayh-logo.png" alt="Adhyayh Logo" className="h-12 invert" />
+              <img src={adhyayhLogo} alt="Adhyayh Logo" className="h-12 invert" />
             </a>
             <p className="text-neutral-400 mb-6">
               Simplifying business growth through strategic services and educational content since 2025.
