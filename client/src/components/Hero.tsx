@@ -160,7 +160,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <div className="text-primary font-bold text-4xl">
-              <AnimatedCounter target={4} duration={1000} inView={statsInView} />
+              <AnimatedCounter target={10} duration={1000} inView={statsInView} />
             </div>
             <p className="text-neutral-700 mt-2 font-medium">Team Members</p>
           </motion.div>
