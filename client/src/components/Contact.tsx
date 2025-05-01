@@ -184,19 +184,18 @@ const Contact = () => {
               variants={itemVariants}
             >
               <h4 className="text-lg font-semibold text-neutral-900 mb-4">Connect With Us</h4>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="flex space-x-4">
                 {SOCIAL_LINKS.map((social, index) => (
                   <motion.a 
                     key={index}
-                    href={social.url}
+                    href={social.url} 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-neutral-50 hover:bg-primary hover:text-white text-neutral-700 rounded-lg flex items-center p-3 transition-all border border-neutral-200 hover:border-primary"
-                    whileHover={{ scale: 1.03, y: -2 }}
-                    whileTap={{ scale: 0.97 }}
+                    className="w-12 h-12 bg-neutral-100 hover:bg-primary hover:text-white text-neutral-600 rounded-full flex items-center justify-center transition-colors"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
                   >
-                    <span className="mr-2">{social.icon}</span>
-                    <span className="font-medium">{social.name}</span>
+                    {social.icon}
                   </motion.a>
                 ))}
               </div>

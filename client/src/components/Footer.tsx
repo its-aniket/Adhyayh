@@ -20,19 +20,18 @@ const Footer = () => {
             <p className="text-neutral-400 mb-6">
               Simplifying business growth through strategic services and educational content since 2025.
             </p>
-            <div className="flex flex-col space-y-3">
+            <div className="flex space-x-4">
               {SOCIAL_LINKS.map((social, index) => (
                 <motion.a 
                   key={index}
                   href={social.url} 
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-neutral-400 hover:text-white transition-colors flex items-center"
-                  whileHover={{ scale: 1.02, x: 5 }}
-                  whileTap={{ scale: 0.98 }}
+                  className="text-neutral-400 hover:text-white transition-colors"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
                 >
-                  <span className="mr-2">{social.icon}</span>
-                  <span>{social.name}</span>
+                  {social.icon}
                 </motion.a>
               ))}
             </div>
