@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
-import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ReactNode } from "react";
 
@@ -40,12 +39,14 @@ const ServiceDetails = ({
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         {/* Back Button */}
         <div className="mb-8">
-          <Link href="/">
-            <Button variant="outline" className="flex items-center gap-2">
-              <ArrowLeft className="h-4 w-4" />
-              Back to Home
-            </Button>
-          </Link>
+          <Button 
+            variant="outline" 
+            className="flex items-center gap-2"
+            onClick={() => window.location.href = '/'}
+          >
+            <ArrowLeft className="h-4 w-4" />
+            Back to Home
+          </Button>
         </div>
 
         {/* Hero Section */}
