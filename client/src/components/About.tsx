@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Check, ArrowRight } from "lucide-react";
+import { Check, ArrowRight, TrendingUp, Users, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import useAnimateOnScroll from "@/hooks/useAnimateOnScroll";
 
@@ -10,15 +10,18 @@ const About = () => {
   const features = [
     {
       title: "Early-Stage Growth",
-      description: "We're in our early growth phase, but already making an impact with forward-thinking clients."
+      description: "We're in our early growth phase, but already making an impact with forward-thinking clients.",
+      icon: <TrendingUp className="text-white h-5 w-5" />
     },
     {
       title: "Dedicated Team",
-      description: "A small but dedicated team of creatives, techies, and problem-solvers based in Pune, India."
+      description: "A small but dedicated team of creatives, techies, and problem-solvers based in Pune, India.",
+      icon: <Users className="text-white h-5 w-5" />
     },
     {
       title: "Client-Focused Approach",
-      description: "Helping businesses structure operations, scale outreach, and streamline processes."
+      description: "Helping businesses structure operations, scale outreach, and streamline processes.",
+      icon: <Heart className="text-white h-5 w-5" />
     }
   ];
 
@@ -79,8 +82,8 @@ const About = () => {
                   animate={contentInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
                   transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
                 >
-                  <div className="flex-shrink-0 w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center">
-                    <Check className="text-primary h-5 w-5" />
+                  <div className="flex-shrink-0 w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                    {feature.icon}
                   </div>
                   <div className="ml-4">
                     <h4 className="text-lg font-semibold text-neutral-900">{feature.title}</h4>
