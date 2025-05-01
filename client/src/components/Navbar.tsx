@@ -40,14 +40,14 @@ const Navbar = () => {
     <header
       className={cn(
         "fixed w-full bg-white bg-opacity-95 shadow-sm z-50 transition-all duration-300",
-        isScrolled ? "py-2" : "py-4"
+        isScrolled ? "py-3" : "py-5"
       )}
       id="navbar"
     >
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <a href="#" className="flex items-center space-x-2">
-            <img src={adhyayhLogo} alt="Adhyayh Logo" className="h-12" />
+            <img src={adhyayhLogo} alt="Adhyayh Logo" className="h-16" style={{ filter: 'brightness(0) contrast(1)' }} />
           </a>
 
           {/* Desktop Navigation */}
