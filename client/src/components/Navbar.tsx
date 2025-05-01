@@ -46,7 +46,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <a href="#" className="flex items-center space-x-2">
-            <span className="text-primary font-poppins font-bold text-2xl">Adhyayh</span>
+            <img src="/assets/adhyayh-logo.png" alt="Adhyayh Logo" className="h-10" />
           </a>
 
           {/* Desktop Navigation */}
