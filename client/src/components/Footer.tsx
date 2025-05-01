@@ -16,7 +16,7 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
           >
             <a href="#" className="inline-block mb-6">
-              <Logo width={180} height={60} color="#FFFFFF" />
+              <Logo width={220} height={80} color="#FFFFFF" />
             </a>
             <p className="text-neutral-400 mb-6">
               Simplifying business growth through strategic services and educational content since 2025.
