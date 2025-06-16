@@ -29,7 +29,7 @@ const Navbar = () => {
   // Handle navigation and close mobile menu
   const handleNavigation = (id: string) => {
     if (isMenuOpen) setIsMenuOpen(false);
-  
+
     if (window.location.pathname !== "/") {
       navigate("/");
       setTimeout(() => {
@@ -45,7 +45,6 @@ const Navbar = () => {
       }
     }
   };
-  
 
   return (
     <header
@@ -63,37 +62,43 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a 
+            <a
               href="/"
               className="font-medium text-neutral-700 hover:text-primary transition-colors cursor-pointer"
             >
               Home
             </a>
-            <a 
+            <a
               onClick={() => handleNavigation("services")}
               className="font-medium text-neutral-700 hover:text-primary transition-colors cursor-pointer"
             >
               Services
             </a>
-            <a 
+            <a
+              href="/blogs"
+              className="font-medium text-neutral-700 hover:text-primary transition-colors cursor-pointer"
+            >
+              Blogs
+            </a>
+            <a
               onClick={() => handleNavigation("about")}
               className="font-medium text-neutral-700 hover:text-primary transition-colors cursor-pointer"
             >
               About
             </a>
-            <a 
+            <a
               onClick={() => handleNavigation("team")}
               className="font-medium text-neutral-700 hover:text-primary transition-colors cursor-pointer"
             >
               Team
             </a>
             <Link
-              href="/careers" 
+              href="/careers"
               className="font-medium text-neutral-700 hover:text-primary transition-colors cursor-pointer"
             >
               Careers
             </Link>
-            <a 
+            <a
               onClick={() => handleNavigation("contact")}
               className="font-medium text-neutral-700 hover:text-primary transition-colors cursor-pointer"
             >
@@ -101,7 +106,7 @@ const Navbar = () => {
             </a>
           </nav>
 
-          <Button 
+          <Button
             className="hidden md:block bg-primary hover:bg-primary-dark text-white font-medium rounded-full transition-colors duration-300"
             onClick={() => handleNavigation("contact")}
           >
@@ -116,7 +121,11 @@ const Navbar = () => {
             className="md:hidden text-neutral-700 bg-white border border-gray-200"
             aria-label="Toggle menu"
           >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
           </Button>
         </div>
 
@@ -124,43 +133,49 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden pb-4 animate-in slide-in-from-top duration-300">
             <div className="flex flex-col space-y-4 pt-4">
-              <a 
+              <a
                 onClick={() => handleNavigation("home")}
                 className="font-medium text-neutral-700 hover:text-primary transition-colors cursor-pointer"
               >
                 Home
               </a>
-              <a 
+              <a
                 onClick={() => handleNavigation("services")}
                 className="font-medium text-neutral-700 hover:text-primary transition-colors cursor-pointer"
               >
                 Services
               </a>
-              <a 
+              <a
                 onClick={() => handleNavigation("about")}
                 className="font-medium text-neutral-700 hover:text-primary transition-colors cursor-pointer"
               >
                 About
               </a>
-              <a 
-                onClick={() => handleNavigation("testimonials")}
+              <a
+                onClick={() => (window.location.href = `/Blogs`)}
                 className="font-medium text-neutral-700 hover:text-primary transition-colors cursor-pointer"
               >
-                Testimonials
+                Blogs
               </a>
-              <a 
+              <Link
+                href="/careers"
+                className="font-medium text-neutral-700 hover:text-primary transition-colors cursor-pointer"
+              >
+                Careers
+              </Link>
+              <a
                 onClick={() => handleNavigation("team")}
                 className="font-medium text-neutral-700 hover:text-primary transition-colors cursor-pointer"
               >
                 Team
               </a>
-              <a 
+              <a
                 onClick={() => handleNavigation("contact")}
                 className="font-medium text-neutral-700 hover:text-primary transition-colors cursor-pointer"
               >
                 Contact
               </a>
-              <Button 
+              <Button
                 className="bg-primary hover:bg-primary-dark text-white font-medium rounded-full transition-colors duration-300 w-full"
                 onClick={() => handleNavigation("contact")}
               >

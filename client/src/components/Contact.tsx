@@ -161,7 +161,7 @@ const Contact = () => {
                 </div>
                 <div className="ml-4">
                   <h4 className="text-lg font-semibold text-neutral-900">Email Us</h4>
-                  <p className="text-neutral-600">hello@adhyayh.com</p>
+                  <p className="text-neutral-600">adhyayh.work@gmail.com</p>
                 </div>
               </motion.div>
               
@@ -174,7 +174,7 @@ const Contact = () => {
                 </div>
                 <div className="ml-4">
                   <h4 className="text-lg font-semibold text-neutral-900">Call Us</h4>
-                  <p className="text-neutral-600">+91 98765 43210</p>
+                  <p className="text-neutral-600">+91 72496 34834</p>
                 </div>
               </motion.div>
             </motion.div>
@@ -219,7 +219,7 @@ const Contact = () => {
                         <FormLabel className="text-sm font-medium text-neutral-700">First Name</FormLabel>
                         <FormControl>
                           <Input 
-                            placeholder="Rushi" 
+                            placeholder="firstname" 
                             className="w-full px-4 py-3 h-auto border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                             {...field} 
                           />
@@ -237,7 +237,7 @@ const Contact = () => {
                         <FormLabel className="text-sm font-medium text-neutral-700">Last Name</FormLabel>
                         <FormControl>
                           <Input 
-                            placeholder="Gulum" 
+                            placeholder="lastname" 
                             className="w-full px-4 py-3 h-auto border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                             {...field} 
                           />
@@ -256,7 +256,7 @@ const Contact = () => {
                       <FormLabel className="text-sm font-medium text-neutral-700">Email Address</FormLabel>
                       <FormControl>
                         <Input 
-                          placeholder="Rushi@example.com" 
+                          placeholder="yourname@example.com" 
                           className="w-full px-4 py-3 h-auto border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                           {...field} 
                         />

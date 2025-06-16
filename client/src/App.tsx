@@ -8,6 +8,8 @@ import LegalService from "@/pages/services/LegalService";
 import AIService from "@/pages/services/AIService";
 import StrategyService from "@/pages/services/StrategyService";
 import TrainingService from "@/pages/services/TrainingService";
+import Blogs from "./pages/Blogs";
+import Blog from "./pages/Blog";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
       <Route path="/services/ai" component={AIService} />
       <Route path="/services/strategy" component={StrategyService} />
       <Route path="/services/training" component={TrainingService} />
+      <Route path="/blogs" component={Blogs}/>
+      <Route path="/blog/:slug" component={Blog}/>
       <Route component={NotFound} />
     </Switch>
   );
