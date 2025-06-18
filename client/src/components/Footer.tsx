@@ -16,7 +16,7 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
           >
             <a href="#" className="inline-block mb-6">
-            <img src="\src\assets\footlogo.png" alt="" height={50} width={80} />
+            <img src="..\assets\footlogo.png" alt="" height={50} width={80} />
             </a>
             <p className="text-neutral-400 mb-6">
               Simplifying business growth through strategic services and educational content since 2025.
