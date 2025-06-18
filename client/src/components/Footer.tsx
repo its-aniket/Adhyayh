@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { MapPin, Mail, Phone } from "lucide-react";
 import { SERVICES_LIST, COMPANY_LINKS, SOCIAL_LINKS } from "@/lib/constants";
 import Logo from "./Logo";
+import footlogo from './footlogo.png'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -16,7 +17,7 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
           >
             <a href="\" className="inline-block mb-6">
-            <img src="\footlogo.png" alt="" height={50} width={80} />
+            <img src={footlogo} alt="" height={50} width={80} />
             </a>
             <p className="text-neutral-400 mb-6">
               Simplifying business growth through strategic services and educational content since 2025.
