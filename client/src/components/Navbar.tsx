@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
 import { Link, useLocation } from "wouter";
 import { navigate } from "wouter/use-browser-location";
-
+import logofoot from "./logofoot.png"
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -57,7 +57,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <a href="#" className="flex items-center space-x-2">
-            <img src="\src\assets\logofoot.png" alt="" height={50} width={80} />
+            <img src={logofoot} alt="" height={50} width={80} />
           </a>
 
           {/* Desktop Navigation */}
