@@ -99,11 +99,11 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <Mail className="text-primary mt-1 mr-3 h-5 w-5" />
-                <span className="text-neutral-400">hello@adhyayh.com</span>
+                <span className="text-neutral-400">adhyayh.work@gmail.com</span>
               </li>
               <li className="flex items-start">
                 <Phone className="text-primary mt-1 mr-3 h-5 w-5" />
-                <span className="text-neutral-400">+91 98765 43210</span>
+                <span className="text-neutral-400">+91 72496 34834</span>
               </li>
             </ul>
           </motion.div>
