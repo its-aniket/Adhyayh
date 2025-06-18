@@ -19,8 +19,8 @@ const Home = () => {
       <Services />
       <About />
       <CtaBanner />
-      <Testimonials />
-      <Team />
+{/*       <Testimonials /> */}
+{/*       <Team /> */}
     </Layout>
   );
 };
