@@ -138,7 +138,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <div className="text-primary font-bold text-4xl">
-              <AnimatedCounter target={1} duration={1000} inView={statsInView} />
+              <AnimatedCounter target={3} duration={1000} inView={statsInView} />
             </div>
             <p className="text-neutral-700 mt-2 font-medium">Client</p>
           </motion.div>
@@ -149,7 +149,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <div className="text-primary font-bold text-4xl">
-              <AnimatedCounter target={2} duration={1000} inView={statsInView} />
+              <AnimatedCounter target={4} duration={1000} inView={statsInView} />
             </div>
             <p className="text-neutral-700 mt-2 font-medium">Projects</p>
           </motion.div>
@@ -171,7 +171,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
           >
             <div className="text-primary font-bold text-4xl">
-              <AnimatedCounter target={6} duration={1000} inView={statsInView} />
+              <AnimatedCounter target={2} duration={1000} inView={statsInView} />
             </div>
             <p className="text-neutral-700 mt-2 font-medium">Services Offered</p>
           </motion.div>
