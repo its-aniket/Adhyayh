@@ -18,10 +18,10 @@ function App() {
       <Route path="/careers" component={Careers} />
       <Route path="/services/marketing" component={MarketingService} />
       <Route path="/services/website" component={WebsiteService} />
-      <Route path="/services/legal" component={LegalService} />
+{/*       <Route path="/services/legal" component={LegalService} />
       <Route path="/services/ai" component={AIService} />
       <Route path="/services/strategy" component={StrategyService} />
-      <Route path="/services/training" component={TrainingService} />
+      <Route path="/services/training" component={TrainingService} /> */}
       <Route path="/blogs" component={Blogs}/>
       <Route path="/blog/:slug" component={Blog}/>
       <Route component={NotFound} />
