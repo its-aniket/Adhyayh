@@ -38,48 +38,48 @@ export const SERVICES = [
     textColor: "text-purple-600",
     slug: "website",
   },
-  {
-    title: "Legal & Financial Services",
-    description:
-      "Business registration, IP protection, and financial consulting to establish a solid operational foundation.",
-    icon: React.createElement(FileText, {
-      className: "text-emerald-600 text-3xl",
-    }),
-    bgColor: "bg-emerald-100",
-    textColor: "text-emerald-600",
-    slug: "legal",
-  },
-  {
-    title: "AI Automation",
-    description:
-      "Implementing AI solutions for workflow automation, customer service, and data-driven decision-making.",
-    icon: React.createElement(Bot, { className: "text-indigo-600 text-3xl" }),
-    bgColor: "bg-indigo-100",
-    textColor: "text-indigo-600",
-    slug: "ai",
-  },
-  {
-    title: "Business Strategy",
-    description:
-      "Comprehensive business plans, market analysis, and competitive positioning for sustainable growth.",
-    icon: React.createElement(GanttChartSquare, {
-      className: "text-cyan-600 text-3xl",
-    }),
-    bgColor: "bg-cyan-100",
-    textColor: "text-cyan-600",
-    slug: "strategy",
-  },
-  {
-    title: "Corporate Training",
-    description:
-      "Educational workshops and training sessions designed to enhance team skills and operational efficiency.",
-    icon: React.createElement(Presentation, {
-      className: "text-amber-600 text-3xl",
-    }),
-    bgColor: "bg-amber-100",
-    textColor: "text-amber-600",
-    slug: "training",
-  },
+  // {
+  //   title: "Legal & Financial Services",
+  //   description:
+  //     "Business registration, IP protection, and financial consulting to establish a solid operational foundation.",
+  //   icon: React.createElement(FileText, {
+  //     className: "text-emerald-600 text-3xl",
+  //   }),
+  //   bgColor: "bg-emerald-100",
+  //   textColor: "text-emerald-600",
+  //   slug: "legal",
+  // },
+  // {
+  //   title: "AI Automation",
+  //   description:
+  //     "Implementing AI solutions for workflow automation, customer service, and data-driven decision-making.",
+  //   icon: React.createElement(Bot, { className: "text-indigo-600 text-3xl" }),
+  //   bgColor: "bg-indigo-100",
+  //   textColor: "text-indigo-600",
+  //   slug: "ai",
+  // },
+  // {
+  //   title: "Business Strategy",
+  //   description:
+  //     "Comprehensive business plans, market analysis, and competitive positioning for sustainable growth.",
+  //   icon: React.createElement(GanttChartSquare, {
+  //     className: "text-cyan-600 text-3xl",
+  //   }),
+  //   bgColor: "bg-cyan-100",
+  //   textColor: "text-cyan-600",
+  //   slug: "strategy",
+  // },
+  // {
+  //   title: "Corporate Training",
+  //   description:
+  //     "Educational workshops and training sessions designed to enhance team skills and operational efficiency.",
+  //   icon: React.createElement(Presentation, {
+  //     className: "text-amber-600 text-3xl",
+  //   }),
+  //   bgColor: "bg-amber-100",
+  //   textColor: "text-amber-600",
+  //   slug: "training",
+  // },
 ];
 
 export const TESTIMONIALS = [
@@ -167,19 +167,19 @@ export const SOCIAL_LINKS = [
 export const SERVICES_OPTIONS = [
   { value: "marketing", label: "Marketing & Branding" },
   { value: "website", label: "Website Development" },
-  { value: "legal", label: "Legal & Financial Services" },
-  { value: "ai", label: "AI Automation" },
-  { value: "strategy", label: "Business Strategy" },
-  { value: "training", label: "Corporate Training" },
+  // { value: "legal", label: "Legal & Financial Services" },
+  // { value: "ai", label: "AI Automation" },
+  // { value: "strategy", label: "Business Strategy" },
+  // { value: "training", label: "Corporate Training" },
 ];
 
 export const SERVICES_LIST = [
   "Marketing & Branding",
   "Website Development",
-  "Legal & Financial Services",
-  "AI Automation",
-  "Business Strategy",
-  "Corporate Training",
+  // "Legal & Financial Services",
+  // "AI Automation",
+  // "Business Strategy",
+  // "Corporate Training",
 ];
 
 export const COMPANY_LINKS = [
