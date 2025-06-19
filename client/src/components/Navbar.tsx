@@ -86,12 +86,12 @@ const Navbar = () => {
             >
               About
             </a>
-            <a
+            {/* <a
               onClick={() => handleNavigation("team")}
               className="font-medium text-neutral-700 hover:text-primary transition-colors cursor-pointer"
             >
               Team
-            </a>
+            </a> */}
             <Link
               href="/careers"
               className="font-medium text-neutral-700 hover:text-primary transition-colors cursor-pointer"
@@ -163,12 +163,12 @@ const Navbar = () => {
               >
                 Careers
               </Link>
-              <a
+              {/* <a
                 onClick={() => handleNavigation("team")}
                 className="font-medium text-neutral-700 hover:text-primary transition-colors cursor-pointer"
               >
                 Team
-              </a>
+              </a> */}
               <a
                 onClick={() => handleNavigation("contact")}
                 className="font-medium text-neutral-700 hover:text-primary transition-colors cursor-pointer"
