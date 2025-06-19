@@ -165,8 +165,8 @@ export const SOCIAL_LINKS = [
 ];
 
 export const SERVICES_OPTIONS = [
-  { value: "marketing", label: "Marketing & Branding" },
-  { value: "website", label: "Website Development" },
+  { value: "Marketing & Branding", label: "Marketing & Branding" },
+  { value: "Website Development", label: "Website Development" },
   // { value: "legal", label: "Legal & Financial Services" },
   // { value: "ai", label: "AI Automation" },
   // { value: "strategy", label: "Business Strategy" },

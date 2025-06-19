@@ -7,6 +7,7 @@ import { useMutation } from "@tanstack/react-query";
 import { MapPin, Mail, Phone, Send, Loader2 } from "lucide-react";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
+import axios from "axios"
 import {
   Form,
   FormControl,
@@ -27,7 +28,14 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import useAnimateOnScroll from "@/hooks/useAnimateOnScroll";
 import { SERVICES_OPTIONS, SOCIAL_LINKS } from "@/lib/constants";
-
+interface EmailParams {
+  firstName: string;
+ 
+  email: string;
+  company?: string;
+  service: string;
+  message: string;
+}
 // Form validation schema
 const contactFormSchema = z.object({
   firstName: z.string().min(2, { message: "First name must be at least 2 characters" }),
@@ -41,6 +49,8 @@ const contactFormSchema = z.object({
 type ContactFormValues = z.infer<typeof contactFormSchema>;
 
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
+
   const { ref: infoRef, inView: infoInView } = useAnimateOnScroll();
   const { ref: formRef, inView: formInView } = useAnimateOnScroll();
   const { toast } = useToast();
@@ -57,34 +67,54 @@ const Contact = () => {
       message: "",
     },
   });
+const sendEmailJS = async (data: EmailParams): Promise<void> => {
+  const {
+    firstName,
+    email,
+    company,
+    service,
+    message
+  } = data;
+
+  const templateParams = {
+    firstName,
+    email,
+    company,
+    service,
+    message,
+  };
+
+  await axios.post("https://api.emailjs.com/api/v1.0/email/send", {
+    service_id: "service_byz3aq4", //process.env.EMAILJS_SERVICE_ID,
+    template_id:"template_1w8j9kj",// process.env.EMAILJS_TEMPLATE_ID,
+    user_id:"8hXco-gLb2znbhPlK", //process.env.EMAILJS_PUBLIC_KEY,
+    template_params: templateParams,
+  });
+};
 
   // Submit form handler
-  const mutation = useMutation({
-    mutationFn: async (data: ContactFormValues) => {
-      const response = await apiRequest("POST", "/api/contact", data);
-      const result = await response.json();
-      return result;
-    },
-    onSuccess: () => {
-      toast({
-        title: "Message sent!",
-        description: "We'll get back to you within 24 hours.",
-        variant: "default",
-      });
-      form.reset();
-    },
-    onError: (error) => {
-      toast({
-        title: "Something went wrong!",
-        description: error.message || "Please try again later.",
-        variant: "destructive",
-      });
-    },
-  });
+  
 
-  function onSubmit(data: ContactFormValues) {
-    mutation.mutate(data);
+  async function onSubmit(data: ContactFormValues) {
+    setLoading(true)
+  try {
+    await sendEmailJS(data);
+    toast({
+      title: "Message sent!",
+      description: "We'll get back to you within 24 hours.",
+      variant: "default",
+    });
+    form.reset();
+  } catch (error: any) {
+    toast({
+      title: "Something went wrong!",
+      description: error.message || "Please try again later.",
+      variant: "destructive",
+    });
+  }finally{
+    setLoading(false)
   }
+}
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -329,10 +359,10 @@ const Contact = () => {
                 
                 <Button 
                   type="submit" 
-                  disabled={mutation.isPending}
+                  disabled={loading}
                   className="w-full bg-primary hover:bg-primary-dark text-white font-medium py-3 px-6 h-auto rounded-lg transition-colors duration-300"
                 >
-                  {mutation.isPending ? (
+                  {loading ? (
                     <>
                       <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                       <span>Sending...</span>
